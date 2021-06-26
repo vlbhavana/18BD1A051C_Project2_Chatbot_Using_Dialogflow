@@ -1,0 +1,20 @@
+<html>
+    <head>
+    </head>
+    <body bgcolor="lightblue">
+        <center><h1>Welcome to ServiceBot</h1>
+        <div style="font-size: larger;">
+            This page is integrated with an interactive chatbot built using google's dialogflow framework.<br>
+            We have integrated the chat bot with mongodb at the backend to retrieve users details and<br>
+             store the trouble tickets generated on user request.<br>
+            Webhooks are used to automatically make request to the server and ngrok (tunneling tool) is used to integrate dialogfow with our backend.
+        </div>
+        </center>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+            chat-title="ServiceBot"
+            agent-id="5ff587dc-b068-48f1-a869-f131a750625e"
+            language-code="en"
+        ></df-messenger>
+    </body>
+</html>
